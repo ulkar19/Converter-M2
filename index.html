@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hat">
+            <div class="bank"><img src="./bank.svg" alt=""></div>
+            <div class="things">
+                <div class="inf"><span id='bank'>БАНК</span></div>
+                <div class="inf"><span id='business'>БИЗНЕС</span></div>
+                <div class="inf"><span id='invest'>ИНВЕСТИЦИИ</span></div>
+                <div class="inf"><span id='insurance'>СТРАХОВАНИЕ</span></div>
+                <div class="inf"><span id='mobile'>МОБАЙЛ</span></div>
+                <div class="inf"><span id='travel'>ПУТЕШЕСТВИЯ</span></div>
+                <div class="inf"><span id='fun'>РАЗВЛЕЧЕНИЯ</span></div>
+            </div>
+            <button id='enter'>ВОЙТИ</button>
+
+        </div>
+        <div class="main">
+            <h1>Конвертер валют онлайн</h1>
+            <div class="content">
+                <div class="first container">
+                    <p>У меня есть</p>
+                    <div class="currencies1 button1">
+                        <button class="rub1" id="selected1">RUB</button>
+                        <button class="usd1">USD</button>
+                        <button class="azn1">AZN</button>
+                        <button class="gbp1">GBP</button>
+                    </div>
+                    <div class="currencies-first block">
+                        <input class="number1" type="text" oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/^00+/, '0')
+                        .replace('..', '.').replace(',', '.').replace(',,', '.').
+                        replace(',.', '.');">
+
+                        <p class='currency1'></p>
+                    </div>
+                </div>
+                <div class="second container">
+                    <p>Хочу приобрести</p>
+                    <div class="currencies2 button2">
+                        <button class="rub2">RUB</button>
+                        <button class="usd2" id="selected2">USD</button>
+                        <button class="azn2">AZN</button>
+                        <button class="gbp2">GBP</button>
+                    </div>
+                    <div class="currencies-second block">
+                        <input class="number2" type="text" oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/^00+/, '0')
+                        .replace('..', '.').replace(',', '.').replace(',,', '.').
+                        replace(',.', '.');">
+                        <p class="currency2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
